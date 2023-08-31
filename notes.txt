@@ -1,0 +1,10 @@
+764 in CASA volgens GUI
+782 volgens API 
+761 deduplicated
+
+wat zijn de duplicates
+21 duplicates
+
+3 niet in CASA, die er toch wel zijn.
+
+Bij elkaar klopt dit...
