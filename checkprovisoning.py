@@ -24,5 +24,5 @@ if __name__ == "__main__":
     missingAC["login"] = missingAC["email"]
     missingAC["password"] = "husflhff"
     print(missingAC[['first-name', 'last-name', 'email']])
-    missingAC[['first-name', 'last-name', 'login', 'email', 'password']].to_csv('missing_from_ac.csv', index=False)
+    missingAC[['first-name', 'last-name', 'login', 'email', 'password']].to_csv('reports/missing_from_ac.csv', index=False)
     i =1

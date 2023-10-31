@@ -1,7 +1,7 @@
 # things to do
 
 - API uitlezen loskoppelen van processing. Teveel API failures. 
-- teachable sales last 3 months / 
+- teachable sales last 3 months / Dit gaat per pricing plan
 - sales AR ; https://api.e-act.nl/api/apidocs/index.html#api-Orders-getOrders
 -- maar sales AR is niet 1:1 met deelnemers. 
 - AC omzetten naar https://github.com/mohsen-hassani/python-connect
@@ -26,6 +26,9 @@
 -- recente Foundation in CASA
 -- recente Foundation in Adobe connect
 -- vraag: wat is de key, na een email wijziging?
+
+##nice to have
+https://helpx.adobe.com/adobe-connect/webservices/get-meeting-poll-results.html
 
 # done
 - problem cloudflare teachable
