@@ -2,8 +2,9 @@
 
 Backoffice functions, such as analytics: teachable &amp; AR scripts
 
-Use: 
+Use:
 ```python checkprovisioning.py```
+which gives files in stdout and dir reports, e.g. ```missing_from_ac.csv```.
 
 ## Developer workflow
 

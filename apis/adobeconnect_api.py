@@ -42,7 +42,7 @@ def create_empty_meeting(name, url):
     params = {
         'type': 'meeting',
         'name': name,
-        'folder-id': FOLDER_ID,
+        'folder-id': 'FOLDER_ID',
         'url-path': url,
         'session': BREEZE,
     }

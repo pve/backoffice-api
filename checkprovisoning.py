@@ -20,6 +20,7 @@ if __name__ == "__main__":
     # In Foundation, but not in CASA.
     missingCasa = aru[~aru.email.str.lower().isin(tue.email.str.lower())]
     missingAC = aru[~aru.email.str.lower().isin(acu.login.str.lower())].rename(columns={'firstName':'first-name' , 'lastName': 'last-name'})  
+    print(missingCasa[['email']])
     # In AutoRespond, but not in Adobe Connect; AC has other field names. 
     missingAC["login"] = missingAC["email"]
     missingAC["password"] = "husflhff"
