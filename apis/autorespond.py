@@ -36,6 +36,7 @@ def get_groups():
 def get_users():
     base_url = urlbase + "groups/86755/relations"
 # 86755,CCSK OL Foundation
+# zou CCSK Deelnemers 60018 moeten zijn. ??? Daar zit veel vervuiling in.
 
     url = urljoin(base_url, "?" + urlencode(params))
 

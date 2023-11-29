@@ -23,6 +23,7 @@
 
 - step 1
 -- recente Foundation in rosters # wat is recente foundation? 
+-- recente rosters in Foundation
 -- recente Foundation in CASA
 -- recente Foundation in Adobe connect
 -- vraag: wat is de key, na een email wijziging?
