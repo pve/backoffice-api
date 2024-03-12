@@ -12,6 +12,8 @@ Clone the repo in a folder, and set up a Python virtual environment. In VSCode t
 
 Fill `.env` with a valid TEACHABLE_API_KEY.
 
+Dont run in decontainer, run in venv.
+
 Run in debugger, or `python teachableapi.py`.
 
 Run tests with `pytest` ?

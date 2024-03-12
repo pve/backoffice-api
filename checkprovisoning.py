@@ -15,7 +15,7 @@ if __name__ == "__main__":
     print(te.count()) # CASA
 
     tue = te.merge(tu, how = 'inner', on='user_id', validate='1:1')
-    tue.to_csv("teachable_useremail_data.csv", index=False)
+    tue.to_csv("reports/teachable_useremail_data.csv", index=False)
 
     # In Foundation, but not in CASA.
     missingCasa = aru[~aru.email.str.lower().isin(tue.email.str.lower())]
