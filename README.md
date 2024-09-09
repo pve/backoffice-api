@@ -14,6 +14,6 @@ Fill `.env` with a valid TEACHABLE_API_KEY.
 
 Dont run in decontainer, run in venv.
 
-Run in debugger, or `python teachableapi.py`.
+Run in debugger, or `python teachableapi.py`, or press the play button.
 
 Run tests with `pytest` ?

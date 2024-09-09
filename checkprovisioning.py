@@ -9,7 +9,7 @@ if __name__ == "__main__":
     print(aru.count())
     acu = pd.DataFrame(acusers()) # Adobe Connect CCSK day 2
     print(acu.count())
-    tu = pd.DataFrame(tusers()).rename(columns={'id':'user_id'}).drop_duplicates(subset=['user_id'])
+    tu = pd.DataFrame(tusers()).rename(columns={'id':'user_id'}).drop_duplicates(subset=['user_id']) # Teachable
     print(tu.count())
     te = pd.DataFrame(tenrollments("265372")).drop_duplicates(subset=['user_id'])
     print(te.count()) # CASA
