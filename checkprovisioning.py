@@ -11,7 +11,8 @@ if __name__ == "__main__":
     print(acu.count())
     tu = pd.DataFrame(tusers()).rename(columns={'id':'user_id'}).drop_duplicates(subset=['user_id']) # Teachable
     print(tu.count())
-    te = pd.DataFrame(tenrollments("265372")).drop_duplicates(subset=['user_id'])
+    te = pd.DataFrame(tenrollments("2611116")).drop_duplicates(subset=['user_id']) # 2611116 CASA5
+#   te = pd.DataFrame(tenrollments("265372")).drop_duplicates(subset=['user_id']) # CASA4.
     print(te.count()) # CASA
 
     tue = te.merge(tu, how = 'inner', on='user_id', validate='1:1')
@@ -20,8 +21,10 @@ if __name__ == "__main__":
     # In Foundation, but not in CASA.
     missingCasa = aru[~aru.email.str.lower().isin(tue.email.str.lower())]
     missingAC = aru[~aru.email.str.lower().isin(acu.login.str.lower())].rename(columns={'firstName':'first-name' , 'lastName': 'last-name'})  
+    print("--> Missing from CASA")
     print(missingCasa[['email']])
     # In AutoRespond, but not in Adobe Connect; AC has other field names. 
+    print("--> Missing from AR")
     missingAC["login"] = missingAC["email"]
     missingAC["password"] = "husflhff"
     print(missingAC[['first-name', 'last-name', 'email']])

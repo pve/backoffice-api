@@ -93,7 +93,8 @@ def get_enrollments(courseid):
     return enrollments
 
 if __name__ == "__main__":
-    enrollments = get_enrollments("265372") # CASA
+#    enrollments = get_enrollments("265372") # CASA4
+    enrollments = get_enrollments("2611116") # CASA5
     if enrollments is not None:
         dfe = pd.DataFrame(enrollments).drop_duplicates(subset=['user_id']) #still not unique?
 #        df = pd.DataFrame(enrollments)
